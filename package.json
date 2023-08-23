@@ -1,0 +1,20 @@
+{
+  "name": "vue-express-sqlite-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-p start:frontend start:backend",
+    "start:frontend": "npm run serve --prefix client",
+    "start:backend": "nodemon server/server.js --prefix server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
